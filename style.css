@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: Tomato;
+    margin-right: 1px;
+    transition: opacity .4s ease;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav a{
+    margin: 0 15px;
+    transition: color .4s ease;
+}
+nav a:hover{
+    color: crimson;
+}
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:url(bg.jpg);
+    background-color:hsl(210, 100%, 50%);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.banner .content h4{
+    color: rgb(255, 255, 255);
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 250;
+    
+}
+.banner .content h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: Tomato;
+    margin-right: 10px;
+    transition: opacity .4s ease;
+}
+.btn:hover{
+    opacity: .6;
+}
